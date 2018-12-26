@@ -18,7 +18,7 @@ When the text length or the output div's width changes, the fitText function inc
 - Use the function fitText(outputDivSelector) to fit the text of the outputDiv (outputDivSelector is the id of the div where the text should fit)
 
 ## Unit tests ##
-This package includes unit testing. Tests resides at "tests" folder and are loaded by default in index.html. Results are displayed inside a hidden div.
+This package includes unit testing. Tests resides at "tests" folder and can be loaded in index.html, just uncommenting the lines in index.html.
 
 ## Improvements ##
 One of the things that I have kept in mid while developing this solution is to make it as simpler and as vanilla as possible. That's why some improvements are possible and could be implemented in the future:
