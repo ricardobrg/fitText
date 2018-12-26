@@ -24,5 +24,23 @@
 	<script src="js/fittext.js"></script>
 	<script src="js/scripts.js"></script>
 
+	<!-- Unit Testing -->
+	<div style="display:none" id="mocha"></div>
+	<script src="https://unpkg.com/chai@4.1.2/chai.js"></script>
+	<script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
+	
+	<script>mocha.setup('bdd')</script>
+	
+	<script src="test/persistchanges.test.js"></script>
+	<script src="test/rangechange.test.js"></script>
+	<script src="test/copy.test.js"></script>
+	<script src="test/fit.test.js"></script>
+	
+	<script>
+		mocha.checkLeaks();
+		mocha.run();
+	</script>
+	<!-- \Unit Testing -->
+
 </body>
 </html>
