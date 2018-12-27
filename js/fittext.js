@@ -9,13 +9,13 @@ function fitText(outputSelector){
 	let contentWidth = outputDiv.scrollWidth;
 	// get fontSize
 	let fontSize = parseInt(window.getComputedStyle(outputDiv, null).getPropertyValue('font-size'),10);
-	// if content's width is bigger then elements width - overflow
+	// if content's width is bigger than elements width - overflow
 	if (contentWidth > width){
 		fontSize = Math.ceil(fontSize * width/contentWidth,10);
 		fontSize =  fontSize > 50 ? fontSize = 50 : fontSize - 1;
 		outputDiv.style.fontSize = fontSize+'px';	
 	}else{
-		// content is smaller then width... let's resize in 1 px until it fits 
+		// content is smaller than width... let's resize in 1 px until it fits 
 		while (contentWidth === width && fontSize < maxFontSize){
 			fontSize = Math.ceil(fontSize) + 1;
 			fontSize = fontSize > 50 ? fontSize = 50 : fontSize;
